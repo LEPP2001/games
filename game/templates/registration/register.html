@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilosLog.css' %}">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrarse</h1>
+        <div>
+            <div class="container-form">
+                <h2>Ingrese sus datos</h2>
+                <form action="" method="POST">
+                    {% csrf_token %}
+            
+                    <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                    <input type="text" name="first_name" id="first_name" placeholder="Nombre">
+                    <input type="text" name="last_name" id="last_name" placeholder="Apellido">
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                    <input type="password" name="password1" id="password1" placeholder="Contraseña">
+                    <p>
+                        Repita su contraseña
+                    </p>
+                    <input type="password" name="password2" id="password2" placeholder="Contraseña">
+                    <div class="container-button">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <p>
+            Después de registrarse, usted podrá iniciar sesión y disfrutar de nuestros servicios.
+            Si ya tiene una cuenta, <a class="nav-link" href={% url 'base' %}>inicie sesión aquí.</a>
+        </p>
+    </div>
+</body>
+</html>

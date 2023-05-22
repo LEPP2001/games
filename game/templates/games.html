@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/games.css' %}">
+    <h3>Juegos</h3>
+
+    <div class="container">
+        <button onclick="showGato()">Tic Tac Toe</button>
+        <div id="gato-game" style="display: none;">
+            <a class="game-url" aria-current="page" href={% url 'gato' %}>
+                <div class="contaider-button">
+                    Jugar
+                </div>
+            </a>
+            <br>
+            <a class="game-url" href={% url 'gatoInst' %}>
+                <div class="contaider-button">
+                    Cómo jugar
+                </div>
+            </a>
+        </div>
+
+        <br>
+
+        <button onclick="showPong()">Torres de Hanoi</button>
+        <div id="pong-game" style="display: none;">
+            <a class="game-url" aria-current="page" href={% url 'hanoi' %}>
+                <div class="contaider-button">
+                    Jugar
+                </div>
+            </a>
+            <br>
+            <a class="game-url" href={% url 'hanoiInst' %}>
+                <div class="contaider-button">
+                    Cómo jugar
+                </div>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}

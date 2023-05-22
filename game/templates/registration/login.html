@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/estilosLog.css' %}">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Iniciar Sesión</h1>
+        <div>
+            <div class="container-form">
+                <h2>Ingrese sus credenciales</h2>
+                <form action="" method="POST">
+                    {% csrf_token %}
+            
+                    <input type="text" name="username" id="username" placeholder="Nombre de usuario">
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <div class="container-button">
+                        <button type="submit">Iniciar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <p>
+            Para acceder a nuestra plataforma es necesario que tengas con una cuenta.
+            Si aún no tienes una cuenta <a class="nav-link" href={% url 'register' %}>regístrate aquí.</a>
+        </p>
+    </div>
+
+</body>
+</html>
