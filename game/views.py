@@ -24,8 +24,6 @@ class MoveViewSet(viewsets.ModelViewSet):
 
 # Renderizar la base
 @login_required
-@csrf_protect
-@ensure_csrf_cookie
 def base(request):
     return render(request, 'base.html')
 
