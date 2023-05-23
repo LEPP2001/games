@@ -3,7 +3,7 @@
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
 name: Build and deploy Python app to Azure Web App - GamesX
-
+   
 on:
   push:
     branches:
@@ -13,8 +13,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
       - uses: actions/checkout@v2
 
       - name: Set up Python version
