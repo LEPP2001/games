@@ -20,7 +20,7 @@ El sistema utiliza la arquitectura de servicios web REST, la cual contiene 4 nod
 * Usuario
 * Plataforma
 * BD
-Servidor de juegos
+* Servidor de juegos
 
 ## Herramientas y tecnologías usadas
 1. Python
