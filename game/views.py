@@ -8,6 +8,7 @@ from .serializers import UserSerializer, GameSerializer, MoveSerializer
 from .forms import CustomUserCreationForm
 from django.contrib.auth import authenticate, login
 import requests
+from django.views.decorators.csrf import csrf_protect, get_token
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
@@ -23,6 +24,8 @@ class MoveViewSet(viewsets.ModelViewSet):
 
 # Renderizar la base
 @login_required
+@csrf_protect
+@ensure_csrf_cookie
 def base(request):
     return render(request, 'base.html')
 
@@ -80,6 +83,8 @@ def hanoiInst(request):
     return render(request, 'games/hanoi/hanoiInst.html', {'content': content})
 
 # Renderizar el registro de usuario
+@csrf_protect
+@ensure_csrf_cookie
 def register(request):
     data = {
         'form' : CustomUserCreationForm()
