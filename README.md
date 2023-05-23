@@ -16,15 +16,11 @@ Este proyecto tiene una arquitectura que permite una rápida escalabilidad.
 * **Tic Tac Toe (Gato)**
 * **Torres de Hanoi**
 ## Arquitectura
-El siguiente diagrama muestra una estructura de los recursos usados:
-
-.                     |--- Servidor de juegos
-
-.Usuario --- GamesX --|
-
-.                     |--- Base de datos
-                     
-![](https://hackmd.io/_uploads/SkWWS3qS2.png)
+El sistema utiliza la arquitectura de servicios web REST, la cual contiene 4 nodos:
+* Usuario
+* Plataforma
+* BD
+Servidor de juegos
 
 ## Herramientas y tecnologías usadas
 1. Python
