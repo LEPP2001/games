@@ -18,9 +18,9 @@ Este proyecto tiene una arquitectura que permite una rápida escalabilidad.
 ## Arquitectura
 El siguiente diagrama muestra una estructura de los recursos usados:
 
-                     |--- Servidor de juegos
-Usuario --- GamesX --|
-                     |--- Base de datos
+.                     |--- Servidor de juegos
+.Usuario --- GamesX --|
+.                     |--- Base de datos
                      
 ![](https://hackmd.io/_uploads/SkWWS3qS2.png)
 
