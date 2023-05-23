@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'GamesX'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B9908D38499D4737AC8C35A90BB97E8D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_539092A6619D46F1A27BE101FFAAD662 }}
