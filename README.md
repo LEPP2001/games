@@ -43,7 +43,7 @@ El sistema utiliza la arquitectura de servicios web REST, la cual contiene 4 nod
     
     `pip install -r requirements.txt`
     
-5. Crea tu propia base de datos local:
+5. Crea tu propia base de datos local(Esto es porque venció el crédito de Azure):
     En el archivo settings.py cambia la variable DATABASES
 
     `
@@ -70,5 +70,5 @@ DATABASES = {
     `localhost:8000`
 
 ## Acceder a la plataforma
-* La plataforma se encuentra disponible para uso en el siguiente enlace: [https://gamesx.azurewebsites.net/](https://gamesx.azurewebsites.net/)
+* La plataforma se encuentra disponible para uso en el siguiente enlace(actualmente NO por costos): [https://gamesx.azurewebsites.net/](https://gamesx.azurewebsites.net/)
 * Registrate y juega
