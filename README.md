@@ -2,11 +2,6 @@
 # ***GamesX***
 ## Integrantes del equipo:
 * **Luis Eduardo Poot Poot**
-* **Christhoper Rajon Polanco**
-* **Ricardo Ayala**
-
-## Asesor
-* **José Luis Lopez Martínez**
 
 ## Descripción
 Esta es una plataforma web para jugar de manera online, los usuarios pueden acceder a la liga para registrarse, posteriormente se inicia sesión con las credenciales creadas para poder visualizar los distintos juegos disponibles. El usuario podrá jugar diversos juegos tales como las torres de hanoi y tictactoe, además existen tutoriales de cómo jugar.
