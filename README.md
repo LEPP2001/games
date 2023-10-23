@@ -1,6 +1,6 @@
 # Plataforma web para jugar online.
 # ***GamesX***
-## Integrantes del equipo:
+## Autor:
 * **Luis Eduardo Poot Poot**
 
 ## Descripción
